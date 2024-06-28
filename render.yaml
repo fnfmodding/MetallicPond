@@ -1,6 +1,5 @@
 services:
 　- type: web
-    env: node
     name: metallicpond-math
     repo: https://github.com/fnfmodding/MetallicPond
     rootDir: Repo root
