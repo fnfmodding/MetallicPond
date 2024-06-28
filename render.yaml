@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: metallicpond-math
+    runtime: docker
+    region: Oregon
+    plan: free
+    dockerCommand: "CMD"
