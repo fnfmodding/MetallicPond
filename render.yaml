@@ -1,11 +1,8 @@
 services:
 　- type: web
-    runtime: docker
+    env: docker
     name: metallicpond-math
     repo: https://github.com/fnfmodding/MetallicPond
     rootDir: Repo root
     dockerCommand: Dockerfile
-    scaling: # Autoscaling configuration
-      minInstances: 1
-      maxInstances: 3
     envVars:
