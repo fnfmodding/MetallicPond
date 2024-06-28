@@ -1,7 +1,11 @@
 services:
-  - type: web
-    name: metallicpond-math
+　- type: web
     runtime: docker
-    region: Oregon
-    plan: free
-    dockerCommand: "CMD"
+    name: metallicpond-math
+    repo: https://github.com/fnfmodding/MetallicPond
+    rootDir: Repo root
+    dockerCommand: Dockerfile
+    scaling: # Autoscaling configuration
+      minInstances: 1
+      maxInstances: 3
+    envVars:
